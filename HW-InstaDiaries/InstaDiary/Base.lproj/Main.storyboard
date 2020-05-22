@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InstaDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How's the weather today?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e0-bM-JlR">
+                                <rect key="frame" x="39" y="81" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NtS-BM-hvK">
+                                <rect key="frame" x="39" y="124" width="336" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your plan for today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ju-Fv-Okk">
+                                <rect key="frame" x="39" y="192" width="210" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4aS-Aw-tLH">
+                                <rect key="frame" x="39" y="235" width="336" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sur-I3-RlC">
+                                <rect key="frame" x="39" y="357" width="336" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5s5-ir-DDN">
+                                <rect key="frame" x="138" y="309" width="138" height="30"/>
+                                <state key="normal" title="Tell me something..."/>
+                                <connections>
+                                    <action selector="resultPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mqH-db-VB6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Sur-I3-RlC" firstAttribute="top" secondItem="5s5-ir-DDN" secondAttribute="bottom" constant="18" id="8V6-Hz-N9G"/>
+                            <constraint firstItem="Sur-I3-RlC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="Fjm-UX-lgw"/>
+                            <constraint firstItem="7e0-bM-JlR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="G2w-rx-F5V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7e0-bM-JlR" secondAttribute="trailing" id="G5I-SH-KLP"/>
+                            <constraint firstItem="4aS-Aw-tLH" firstAttribute="top" secondItem="3ju-Fv-Okk" secondAttribute="bottom" constant="22" id="Jf1-yG-DQx"/>
+                            <constraint firstItem="3ju-Fv-Okk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="KeK-CB-xgt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5s5-ir-DDN" secondAttribute="trailing" constant="138" id="Mie-Kw-cLA"/>
+                            <constraint firstItem="Sur-I3-RlC" firstAttribute="top" secondItem="5s5-ir-DDN" secondAttribute="bottom" constant="18" id="N9I-fo-ZZ3"/>
+                            <constraint firstItem="7e0-bM-JlR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="QMG-gJ-dPO"/>
+                            <constraint firstItem="4aS-Aw-tLH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="WSw-mT-Kh3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NtS-BM-hvK" secondAttribute="trailing" constant="39" id="X7x-LZ-jDF"/>
+                            <constraint firstItem="5s5-ir-DDN" firstAttribute="top" secondItem="4aS-Aw-tLH" secondAttribute="bottom" constant="40" id="Xp2-DH-ttk"/>
+                            <constraint firstItem="NtS-BM-hvK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="YjO-1m-DQZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4aS-Aw-tLH" secondAttribute="trailing" constant="39" id="aDU-Og-2UL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ju-Fv-Okk" secondAttribute="trailing" constant="165" id="ajQ-Nd-lRX"/>
+                            <constraint firstItem="NtS-BM-hvK" firstAttribute="top" secondItem="7e0-bM-JlR" secondAttribute="bottom" constant="22" id="anR-Hy-gh4"/>
+                            <constraint firstItem="5s5-ir-DDN" firstAttribute="top" secondItem="4aS-Aw-tLH" secondAttribute="bottom" constant="40" id="iOg-HQ-ZyU"/>
+                            <constraint firstItem="5s5-ir-DDN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="jnX-Hv-RZf"/>
+                            <constraint firstItem="Sur-I3-RlC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qY2-8L-XjL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sur-I3-RlC" secondAttribute="trailing" constant="39" id="rVl-Zk-7wS"/>
+                            <constraint firstItem="4aS-Aw-tLH" firstAttribute="top" secondItem="3ju-Fv-Okk" secondAttribute="bottom" constant="22" id="sof-2t-BA3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sur-I3-RlC" secondAttribute="bottom" constant="471" id="vLT-dl-r1K"/>
+                            <constraint firstItem="3ju-Fv-Okk" firstAttribute="top" secondItem="NtS-BM-hvK" secondAttribute="bottom" constant="34" id="wLc-Q8-E4K"/>
+                            <constraint firstItem="3ju-Fv-Okk" firstAttribute="top" secondItem="NtS-BM-hvK" secondAttribute="bottom" constant="34" id="wT6-gJ-EhR"/>
+                            <constraint firstItem="NtS-BM-hvK" firstAttribute="top" secondItem="7e0-bM-JlR" secondAttribute="bottom" constant="22" id="yes-Kt-QKO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="planText" destination="4aS-Aw-tLH" id="1xo-zm-irl"/>
+                        <outlet property="resultText" destination="Sur-I3-RlC" id="JhC-Xj-mfh"/>
+                        <outlet property="weatherText" destination="NtS-BM-hvK" id="03i-L3-xHE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
